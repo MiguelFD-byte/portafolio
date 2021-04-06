@@ -1,0 +1,198 @@
+
+/*imagenes*/
+$background : url(../img/img2.jpg);
+$background2 : url(../img/rose.jpg);
+$background3 : url(../img/p1.jpg);
+$background4 : url(../img/horeca-de-culligan.jpg);
+$background5 : url(../img/pexels-ray-piedra-1456740.jpg);
+$background6 : url(../img/pepsi.jpg);
+$background7 : url('https://angular.io/assets/images/logos/angular/angular.svg');
+$background8 : url('../img/c1.jpg');
+
+@mixin  info{
+    width: 100%;
+    padding: 30px;
+    pointer-events: none;
+}
+
+@mixin info_h2 {
+    margin: 0px 0px 10px 0px;
+    transform: translateY(-50px);
+    transition: 1s;
+    opacity: 0;
+    animation: fadetop 1s forwards;
+}
+
+@keyframes fadetop{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@mixin info_span {
+    font-size: 2em;
+    font-weight: 700;
+    color: crimson;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 1s;
+    animation: fadebot 1s forwards;
+}
+
+@mixin info_p {
+    font-size: 1.2em;
+    margin: 10px 0px 0px 0px;
+    font-weight: 700;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 1s;
+    animation: fadebot 1s forwards;
+}
+
+@keyframes fadebot{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*proyectos*/
+@mixin main_proyectos{
+    width: 100%;
+    position: relative;
+    height: 350px;
+    padding: 20px;
+    pointer-events: none;
+}
+
+@mixin proyecto{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin proyectos{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.3);
+    }
+}
+
+@mixin proyects{
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+
+/*controles*/
+@mixin controles{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    margin: 0px 20px 20px 0px;
+    cursor: pointer;
+}
+
+@mixin  btn1{
+    width: 20px;
+    height: 20px;
+    border: 3px solid;
+    border-color: #fff transparent transparent #fff;
+    transform: rotate(-45deg);
+    background-color: transparent;
+    transition: 0.5s;
+    pointer-events: all;
+    &:hover{
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+@mixin  btn2{
+    width: 20px;
+    height: 20px;
+    border: 3px solid;
+    border-color: #fff transparent transparent #fff;
+    transform: rotate(140deg);
+    background-color: transparent;
+    transition: 0.5s;
+    pointer-events: all;
+    &:hover{
+        transform: rotate(140deg) scale(0.8);
+    }
+}
+
+@mixin  text{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    padding: 30px;
+    line-height: 2em;
+    color: #fff;
+    width: 100%;
+
+}
+
+@mixin span{
+    font-size: 1.2em;
+    transform: translateX(-150px);
+    transition: 1s;
+    animation: fade 1s forwards;
+    opacity: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+@keyframes fade{
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@mixin a{
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid;
+    width: fit-content;
+    letter-spacing: 2px;
+    color: #fff;
+    transform: translateX(150px);
+    transition: 1s;
+    animation: fade 1s forwards;
+    opacity: 0;
+    outline: none;
+    pointer-events: all;
+    &:hover{
+        
+    }
+}
+
+@keyframes fade2{
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/*imagenes*/
+@-webkit-keyframes fadetop {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadetop {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadebot {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadebot {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*proyectos*/
+/*controles*/
+@-webkit-keyframes fade {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade2 {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade2 {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.info {
+  width: 100%;
+  padding: 30px;
+  pointer-events: none;
+}
+
+.info h2 {
+  margin: 0px 0px 10px 0px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+  -webkit-animation: fadetop 1s forwards;
+          animation: fadetop 1s forwards;
+}
+
+.info span {
+  font-size: 2em;
+  font-weight: 700;
+  color: crimson;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fadebot 1s forwards;
+          animation: fadebot 1s forwards;
+}
+
+.info p {
+  font-size: 1.2em;
+  margin: 10px 0px 0px 0px;
+  font-weight: 700;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fadebot 1s forwards;
+          animation: fadebot 1s forwards;
+}
+
+/*proyectos*/
+.main_proyectos {
+  width: 100%;
+  position: relative;
+  height: 350px;
+  padding: 20px;
+  pointer-events: none;
+}
+
+.main_proyectos .proyectos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main_proyectos .proyectos .proyecto1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/img2.jpg);
+}
+
+.main_proyectos .proyectos .proyecto1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main_proyectos .proyectos .proyecto2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/rose.jpg);
+}
+
+.main_proyectos .proyectos .proyecto2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main_proyectos .proyectos .proyecto3 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/p1.jpg);
+}
+
+.main_proyectos .proyectos .proyecto3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main_proyectos .proyectos .proyecto4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/horeca-de-culligan.jpg);
+}
+
+.main_proyectos .proyectos .proyecto4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main_proyectos .proyectos .proyecto5 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/pexels-ray-piedra-1456740.jpg);
+}
+
+.main_proyectos .proyectos .proyecto5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main_proyectos .proyectos .proyecto6 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/pepsi.jpg);
+}
+
+.main_proyectos .proyectos .proyecto6::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main_proyectos .proyectos .proyecto7 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://angular.io/assets/images/logos/angular/angular.svg");
+}
+
+.main_proyectos .proyectos .proyecto7::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main_proyectos .proyectos .proyecto8 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/c1.jpg");
+}
+
+.main_proyectos .proyectos .proyecto8::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.proyects {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0;
+  margin: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+
+#Prev {
+  width: 20px;
+  height: 20px;
+  border: 3px solid;
+  border-color: #fff transparent transparent #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: all;
+}
+
+#Prev:hover {
+  -webkit-transform: rotate(-45deg) scale(0.8);
+          transform: rotate(-45deg) scale(0.8);
+}
+
+#Next {
+  width: 20px;
+  height: 20px;
+  border: 3px solid;
+  border-color: #fff transparent transparent #fff;
+  -webkit-transform: rotate(140deg);
+          transform: rotate(140deg);
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: all;
+}
+
+#Next:hover {
+  -webkit-transform: rotate(140deg) scale(0.8);
+          transform: rotate(140deg) scale(0.8);
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 20%;
+  padding: 30px;
+  line-height: 2em;
+  color: #fff;
+  width: 100%;
+}
+
+.text h2 {
+  font-size: 2em;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: faded 1s forwards;
+          animation: faded 1s forwards;
+  margin-bottom: 10px;
+}
+
+@-webkit-keyframes faded {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes faded {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.text span {
+  font-size: 1.2em;
+  -webkit-transform: translateX(-150px);
+          transform: translateX(-150px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fade 1s forwards;
+          animation: fade 1s forwards;
+  opacity: 0;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.text a {
+  text-decoration: none;
+  padding: 5px 20px;
+  border: 2px solid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 2px;
+  color: #fff;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fade 1s forwards;
+          animation: fade 1s forwards;
+  opacity: 0;
+  outline: none;
+  pointer-events: all;
+}
+
+.pp {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  top: -10px;
+}
+
+.flex {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/*psedos*/
+/*activador*/
+.main_proyectos .proyectos .active {
+  display: block;
+}
+
+@media screen and (min-width: 500px) {
+  .info {
+    max-width: 87%;
+  }
+  .main_proyectos {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    margin: auto;
+  }
+  .main_proyectos {
+    height: 400px;
+    max-width: 80%;
+    margin: auto;
+  }
+  .text {
+    top: 20%;
+    padding: 20px 50px;
+  }
+  .text h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    line-height: 1em;
+  }
+  .text span {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  .flex {
+    background-color: #f2f2f2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px;
+  }
+  .info h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+  .info span {
+    font-size: 3em;
+  }
+  .info p {
+    font-size: 1.3em;
+  }
+  .main_proyectos {
+    height: 500px;
+    max-width: 70%;
+    margin: auto;
+  }
+  .text {
+    top: 25%;
+    padding: 20px 50px;
+  }
+  .text h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    line-height: 1em;
+  }
+  .text span {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

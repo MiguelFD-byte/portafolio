@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import 'info';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    
+}
+
+.info{
+    @include info;
+}
+
+.info h2{
+    @include info_h2;
+}
+.info span{
+    @include info_span;
+}
+.info p{
+    @include info_p;
+}
+
+/*proyectos*/
+
+.main_proyectos{
+    @include main_proyectos;
+}
+
+.main_proyectos .proyectos{
+    @include proyecto;
+}
+
+.main_proyectos .proyectos .proyecto1{
+    @include proyectos;
+    background-image: $background;
+}
+
+.main_proyectos .proyectos .proyecto2{
+    @include proyectos;
+    background-image: $background2;
+}
+
+.main_proyectos .proyectos .proyecto3{
+    @include proyectos;
+    background-image: $background3;
+}
+
+.main_proyectos .proyectos .proyecto4{
+    @include proyectos;
+    background-image: $background4;
+}
+
+.main_proyectos .proyectos .proyecto5{
+    @include proyectos;
+    background-image: $background5;
+}
+
+.main_proyectos .proyectos .proyecto6{
+    @include proyectos;
+    background-image: $background6;
+}
+
+.main_proyectos .proyectos .proyecto7{
+    @include proyectos;
+    background-image: $background7;
+}
+.main_proyectos .proyectos .proyecto8{
+    @include proyectos;
+    background-image: $background8;
+}
+
+
+.proyects{
+    @include proyects;
+}
+
+.controls{
+    @include controles;
+}
+
+#Prev{
+    @include btn1;
+}
+
+#Next{
+    @include btn2;
+}
+
+.text{
+    @include text;
+}
+
+.text h2{
+    font-size: 2em;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 1s;
+    animation: faded 1s forwards;
+    margin-bottom: 10px;
+}
+
+@keyframes faded{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.text span{
+    @include span;
+}
+
+.text a{
+    @include a;
+}
+
+.pp{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    top: -10px;
+}
+
+.flex{
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/*psedos*/
+
+/*activador*/
+.main_proyectos .proyectos .active{
+    display: block;
+}
+
+@media screen and (min-width: 500px){
+    .info{
+        max-width: 87%;
+    }
+    .main_proyectos{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 768px){
+    .info{
+        margin: auto;
+    }
+    .main_proyectos{
+        height: 400px;
+        max-width: 80%;
+        margin: auto;
+    }
+    .text{
+        top: 20%;
+        padding: 20px 50px;
+        & h2{
+            font-size: 3em;
+            margin-bottom: 30px;
+            line-height: 1em;
+        }
+        & span{
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        & a{
+
+        }
+    }
+    .flex{
+        background-color: #f2f2f2;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    .info h2{
+        font-size: 2.5em;
+        margin-bottom: 50px;
+    }
+    .info span{
+        font-size: 3em;
+    }
+    .info p{
+        font-size: 1.3em;
+    }
+    .main_proyectos{
+        height: 500px;
+        max-width: 70%;
+        margin: auto;
+    }
+    .text{
+        top: 25%;
+        padding: 20px 50px;
+        & h2{
+            font-size: 3em;
+            margin-bottom: 30px;
+            line-height: 1em;
+        }
+        & span{
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        & a{
+
+    }
+    }
+}
